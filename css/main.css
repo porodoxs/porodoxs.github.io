@@ -15,19 +15,12 @@ main {
 a, a:hover {
 	text-decoration: none;
 }
-/*
- * Typography
- */
 
 h1 {
   margin-bottom: 20px;
   padding-bottom: 9px;
   border-bottom: 1px solid #eee;
 }
-
-/*
- * Sidebar
- */
 
 .sidebar {
   width: 237px;
