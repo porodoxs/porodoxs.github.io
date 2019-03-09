@@ -15,12 +15,19 @@ main {
 a, a:hover {
 	text-decoration: none;
 }
+/*
+ * Typography
+ */
 
 h1 {
   margin-bottom: 20px;
   padding-bottom: 9px;
   border-bottom: 1px solid #eee;
 }
+
+/*
+ * Sidebar
+ */
 
 .sidebar {
   width: 237px;
@@ -187,6 +194,13 @@ h1 {
 	color: #FFFFFF;
 }
 
+.sidebar .rate{
+	background: #0B2248;
+	line-height: 25px;
+	font-size: 12px;
+	color: rgba(255, 255, 255, 0.64);
+}
+
 .sidebar .clock .clock-date, .sidebar .clock .clock-time {
 	background: #0B2248;
 	margin-bottom: 1px;
@@ -214,6 +228,17 @@ h1 {
 	background-image: url(../img/calendar.svg);
 	margin: 28px 20px;
 }
+
+.sidebar .rate span:first-child {
+	display: block;
+}
+
+.sidebar .rate .dollar, .sidebar .rate .euro{
+	line-height: 33px;
+	font-size: 16px;
+	color: #0069BF;
+}
+
 
 .icon-briefcase{
 	background-image: url(../img/briefcase.svg);

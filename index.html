@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>Instant Invest</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/jasny-bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -82,17 +82,21 @@
         		Григоренко И.О.
         		<span>БС №1234-БА</span>
         	</div>
-        	<div class="clock d-flex flex-row align-items-center">
-        		<div class="clock-date d-flex align-items-center">
-        			<span class="icon-calendar"></span>
-        			<time id="date"> </time>
-        		</div>
-        		<div class="clock-time d-flex justify-content-center align-items-center">
-        			<time id="time"> </time>
-        		</div>
+        	<div class="clock">
+        		<div class="d-flex flex-row">
+	        		<div class="clock-date d-flex align-items-center">
+	        			<span class="icon-calendar"></span>
+	        			<time id="date"> </time>
+	        		</div>
+	        		<div class="clock-time d-flex justify-content-center align-items-center">
+	        			<time id="time"> </time>
+	        		</div>
+	        	</div>
         	</div>
-        	<div>
-        		
+        	<div class="rate">
+        		<span>Курс валюты</span>
+        		<span class="dollar">$: 67 руб.</span>
+        		<span class="euro">€: 75 руб.</span>
         	</div>
           <ul class="nav-pills pl-0">
             <li class="nav-item">
