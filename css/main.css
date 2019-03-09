@@ -1,0 +1,272 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: #001435;
+	padding-top: 80px;
+}
+main {
+	width: 100%;
+	padding: 20px;
+	margin-left: 237px;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+/*
+ * Typography
+ */
+
+h1 {
+  margin-bottom: 20px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  width: 237px;
+  background: #001435;
+  position: fixed;
+  top: 80px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  border-right: 1px solid #eee;
+}
+
+/* Sidebar navigation */
+.sidebar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sidebar .nav {
+  margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+}
+
+.sidebar .nav-item + .nav-item {
+  margin-left: 0;
+}
+
+.sidebar .nav-link {
+	border-radius: 0;
+	line-height: 32px;
+	font-size: 16px;
+	color: #FFFFFF;
+	padding: 16px 20px;
+}
+
+.sidebar .nav-link.active {
+	background: #0B2248;
+}
+
+.username {
+	text-align: left;
+    color: white;
+    font-size: 20px;
+    padding: 18px 0 18px 18px;
+}
+
+.username span {
+	line-height: 25px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.56);
+    display: block;
+}
+
+
+.placeholders {
+  padding-bottom: 3rem;
+}
+
+.placeholder img {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.bg-inverse {
+	background: #0B2248;
+	padding: 0;
+}
+
+.toggle-menu{
+	width: 237px;
+}
+
+.toggle-menu button{
+	margin: 8px;
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler-icon{
+	background-image: url(../img/menu-options.svg);
+	background-size: auto;
+}
+
+.logo {
+	display: flex;
+    align-items: center;
+	width: 237px;
+    height: 80px;
+    background: #001435;
+    border-radius: 0px 0px 0px 300px;
+}
+
+.logo img {
+	margin: 20px 20px auto auto;
+}
+
+.topbar-sep{
+    width: 1px;
+    margin: 0 5px;
+    border-left: 1px solid #0069BF;
+}
+
+.navbar .navbar-nav .nav-item{
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 16px 20px;
+    border-left: 1px solid #1A3768;
+}
+
+.navbar .navbar-nav .nav-item span:first-child {
+	display: block;
+}
+
+.navbar .navbar-nav .nav-item span {
+	color: #0069BF;
+}
+
+.bg-inverse .nav-item .nav-link .badge {
+	width: 16px;
+    height: 16px;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 40px;
+    background: #FFFFFF;
+    color: #001435;
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: normal;
+    padding: 0;
+}
+
+.dropdown .notification{
+	width: 48px;
+    height: 48px;
+	background: #001435;
+    border-radius: 10rem;
+}
+
+.icon-bell{
+	width: 28px;
+	height: 28px;
+	margin: auto;
+	background-image: url(../img/notification.svg);
+}
+
+.sidebar .nav-item .nav-link span {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-bottom: -2px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+}
+
+.sidebar .clock{
+	color: #FFFFFF;
+}
+
+.sidebar .clock .clock-date, .sidebar .clock .clock-time {
+	background: #0B2248;
+	margin-bottom: 1px;
+}
+
+.sidebar .clock .clock-date{
+	width: 156px;
+}
+
+.sidebar .clock .clock-time{
+	width: 80px;
+    height: 80px;
+    font-size: 22px;
+    margin-left: 1px;
+}
+
+.sidebar .clock .clock-date time span {
+	display: block;
+	font-size: 12px;
+}
+
+.icon-calendar{
+	width: 24px;
+	height: 24px;
+	background-image: url(../img/calendar.svg);
+	margin: 28px 20px;
+}
+
+.icon-briefcase{
+	background-image: url(../img/briefcase.svg);
+}
+
+.icon-chart{
+	background-image: url(../img/chart.svg);
+}
+
+.icon-service{
+	background-image: url(../img/service.svg);
+}
+
+.icon-contacs{
+	background-image: url(../img/contacs.svg);
+}
+
+.icon-exit{
+	background-image: url(../img/exit.svg);
+}
+
+.dropdown-menu, .dropdown-header{
+	font-size: 14px;
+	color: #001435;
+}
+
+.dropdown-menu a {
+	line-height: 25px;
+	font-size: 12px;
+	color: #0069BF;
+}
+
+.bg-inverse .navbar-nav .dropdown-menu{
+	position: absolute;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	padding: 5px 15px;
+}
+
+.bg-inverse .navbar-nav .dropdown-menu .dropdown-header{
+	padding: 10px 5px;
+}
+
+
+
+@media (max-width: 576px){
+	.sidebar {
+	    position: unset;
+	}
+}

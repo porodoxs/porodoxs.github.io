@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Instant Invest</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jasny-bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="navbar fixed-top bg-inverse">
+		<div class="toggle-menu">
+			<button class="navbar-toggler navbar-toggler-right hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+		<ul class="navbar-nav flex-row mr-auto">
+			<li class="nav-item">
+				<span>Активы:</span>
+				1 234 456 руб.
+				<span class="topbar-sep"></span>
+				19 041$
+				<span class="topbar-sep"></span>
+				56%
+			</li>
+			<li class="nav-item">
+				<span>Свободные средства:</span>
+				1 234 456 руб.
+				<span class="topbar-sep"></span>
+				19 041$
+				<span class="topbar-sep"></span>
+				56%
+			</li>
+			<li class="nav-item">
+				<span>Всего:</span>
+				1 234 456 руб.
+				<span class="topbar-sep"></span>
+				19 041$
+				<span class="topbar-sep"></span>
+				56%
+			</li>
+			<li class="nav-item dropdown d-md-down-none">
+				<a class="nav-link notification" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					<span class="icon-bell"></span>
+					<span class="badge badge-pill">5</span>
+				</a>
+				<div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+					<div class="dropdown-header text-center">
+						У вас есть неподписанные документы
+					</div>
+					<a class="float-right" href="#">Посмотреть список</a>
+				</div>
+			</li>
+		</ul>
+      <div class="logo">
+      	<img src="img/logo.png">
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Settings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+	<div class="container-fluid">
+      <div class="row">
+        <div class="hidden-xs-down bg-faded sidebar d-flex flex-column">
+        	<div class="username">
+        		Григоренко И.О.
+        		<span>БС №1234-БА</span>
+        	</div>
+        	<div class="clock d-flex flex-row align-items-center">
+        		<div class="clock-date d-flex align-items-center">
+        			<span class="icon-calendar"></span>
+        			<time id="date"> </time>
+        		</div>
+        		<div class="clock-time d-flex justify-content-center align-items-center">
+        			<time id="time"> </time>
+        		</div>
+        	</div>
+        	<div>
+        		
+        	</div>
+          <ul class="nav-pills pl-0">
+            <li class="nav-item">
+                <a class="nav-link active" href="#"><span class="icon-briefcase"></span>Портфель</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><span class="icon-chart"></span>Торговля</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><span class="icon-service"></span>Сервис</a>
+            </li>
+          </ul>
+
+          <ul class="nav-pills pl-0 mt-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="icon-contacs"></span>Контакты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="icon-exit"></span>Выход</a>
+            </li>
+          </ul>
+        </div>
+
+        <main class="content">
+          <h1>Dashboard</h1>
+
+          <section class="row text-center placeholders">
+            <div class="col-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <div class="text-muted">Something else</div>
+            </div>
+            <div class="col-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+          </section>
+
+          <h2>Section title</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1,001</td>
+                  <td>Lorem</td>
+                  <td>ipsum</td>
+                  <td>dolor</td>
+                  <td>sit</td>
+                </tr>
+                <tr>
+                  <td>1,002</td>
+                  <td>amet</td>
+                  <td>consectetur</td>
+                  <td>adipiscing</td>
+                  <td>elit</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>Integer</td>
+                  <td>nec</td>
+                  <td>odio</td>
+                  <td>Praesent</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>libero</td>
+                  <td>Sed</td>
+                  <td>cursus</td>
+                  <td>ante</td>
+                </tr>
+                <tr>
+                  <td>1,004</td>
+                  <td>dapibus</td>
+                  <td>diam</td>
+                  <td>Sed</td>
+                  <td>nisi</td>
+                </tr>
+                <tr>
+                  <td>1,005</td>
+                  <td>Nulla</td>
+                  <td>quis</td>
+                  <td>sem</td>
+                  <td>at</td>
+                </tr>
+                <tr>
+                  <td>1,006</td>
+                  <td>nibh</td>
+                  <td>elementum</td>
+                  <td>imperdiet</td>
+                  <td>Duis</td>
+                </tr>
+                <tr>
+                  <td>1,007</td>
+                  <td>sagittis</td>
+                  <td>ipsum</td>
+                  <td>Praesent</td>
+                  <td>mauris</td>
+                </tr>
+                <tr>
+                  <td>1,008</td>
+                  <td>Fusce</td>
+                  <td>nec</td>
+                  <td>tellus</td>
+                  <td>sed</td>
+                </tr>
+                <tr>
+                  <td>1,009</td>
+                  <td>augue</td>
+                  <td>semper</td>
+                  <td>porta</td>
+                  <td>Mauris</td>
+                </tr>
+                <tr>
+                  <td>1,010</td>
+                  <td>massa</td>
+                  <td>Vestibulum</td>
+                  <td>lacinia</td>
+                  <td>arcu</td>
+                </tr>
+                <tr>
+                  <td>1,011</td>
+                  <td>eget</td>
+                  <td>nulla</td>
+                  <td>Class</td>
+                  <td>aptent</td>
+                </tr>
+                <tr>
+                  <td>1,012</td>
+                  <td>taciti</td>
+                  <td>sociosqu</td>
+                  <td>ad</td>
+                  <td>litora</td>
+                </tr>
+                <tr>
+                  <td>1,013</td>
+                  <td>torquent</td>
+                  <td>per</td>
+                  <td>conubia</td>
+                  <td>nostra</td>
+                </tr>
+                <tr>
+                  <td>1,014</td>
+                  <td>per</td>
+                  <td>inceptos</td>
+                  <td>himenaeos</td>
+                  <td>Curabitur</td>
+                </tr>
+                <tr>
+                  <td>1,015</td>
+                  <td>sodales</td>
+                  <td>ligula</td>
+                  <td>in</td>
+                  <td>libero</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jasny-bootstrap.min.js"></script>
+
+	<script>
+		var now, dd, td;
+		var days = ["Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота"];
+
+		document.addEventListener("DOMContentLoaded", init, false);
+		function init(){
+		 dd = document.getElementById("date");
+		 td = document.getElementById("time");
+		 updateTime();
+		 setInterval(updateTime,1000);
+		}
+		function updateTime(){
+		 var clockdata = getClockStrings();
+		 dd.innerHTML = clockdata.datehtml;
+		 td.innerHTML = clockdata.timehtml;
+		 dd.dateTime = now.toISOString();
+		 td.dateTime = now.toISOString();
+		}
+		function getClockStrings(){
+		 now = new Date();
+		 var year = now.getFullYear();
+		 var month = now.getMonth()+1;
+		 var date = now.getDate();
+		 var day = days[now.getDay()];
+		 var hour = now.getHours();
+		 var minutes = now.getMinutes();
+		 var seconds = now.getSeconds();
+		 var clockhour = hour > 24 ? hour - 24 : hour;
+		 var clockminutes = minutes < 10 ? "0" + minutes : minutes;
+		 var month = month < 10 ? "0" + month : month;
+		 var datehtml = "<span>" + day + "</span>" + date + "/" + month + "/" + year;
+		 var timehtml = clockhour + ":" + clockminutes;
+		 return {"datehtml":datehtml,"timehtml":timehtml};
+		}
+	</script>
+</body>
+</html>
