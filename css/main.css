@@ -60,12 +60,23 @@ h1 {
   margin-left: 0;
 }
 
-.sidebar .nav-link {
+.sidebar .nav-link, .navbar-collapse .collapse-menu>.nav-item>.nav-link {
 	border-radius: 0;
 	line-height: 32px;
 	font-size: 16px;
 	color: #FFFFFF;
 	padding: 16px 20px;
+}
+
+.navbar-collapse .collapse-menu>.nav-item>.nav-link {
+	padding: 10px 0;
+}
+
+.navbar-collapse .sub-menu .nav-link{
+	line-height: 33px;
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.8);
+	padding: 0;
 }
 
 .sidebar .nav-link.active {
@@ -101,6 +112,14 @@ h1 {
 	padding: 0;
 }
 
+.bg-inverse .collapse, .collapsing {
+	width: 100%;
+    position: absolute;
+    top: 0;
+    background: #0B2248;
+}
+
+
 .toggle-menu{
 	width: 237px;
 }
@@ -114,6 +133,49 @@ h1 {
 .navbar-toggler-icon{
 	background-image: url(../img/menu-options.svg);
 	background-size: auto;
+}
+
+#navbarsCollapse .toggle-menu button, #navbarsCollapse .toggle-menu-close button{
+	margin: 21px 8px 0;
+}
+
+#navbarsCollapse .toggle-menu{
+	width: 138px;
+}
+
+#navbarsCollapse ul.collapse-menu > li{
+	margin-top: 40px;
+}
+
+#navbarsCollapse ul.collapse-menu > li:nth-child(2), #navbarsCollapse ul.collapse-menu > li:nth-child(3){
+	width: 230px;
+}
+#navbarsCollapse ul.collapse-menu > li:nth-child(4){
+	width: 370px;
+}
+
+#navbarsCollapse ul.collapse-menu > li:nth-child(2){
+	min-width: 140px;
+}
+
+#navbarsCollapse ul.collapse-menu > li:nth-child(3){
+	min-width: 105px;
+}
+
+#navbarsCollapse ul.collapse-menu > li:nth-child(4){
+	min-width: 320px;
+}
+
+#navbarsCollapse ul.collapse-menu > li:nth-child(5){
+	min-width: 135px;
+}
+
+#navbarsCollapse .navbar-toggler-icon{
+	background-image: url(../img/menu-options-collapse.svg);
+}
+
+#navbarsCollapse .float-right .navbar-toggler-icon{
+	background-image: url(../img/menu-options-close.svg);
 }
 
 .logo {
@@ -135,7 +197,7 @@ h1 {
     border-left: 1px solid #0069BF;
 }
 
-.navbar .navbar-nav .nav-item{
+.navbar > .navbar-nav .nav-item{
     font-style: normal;
     font-weight: normal;
     line-height: 22px;
@@ -145,13 +207,15 @@ h1 {
     border-left: 1px solid #1A3768;
 }
 
-.navbar .navbar-nav .nav-item span:first-child {
+.navbar > .navbar-nav .nav-item span:first-child {
 	display: block;
 }
 
 .navbar .navbar-nav .nav-item span {
 	color: #0069BF;
 }
+
+
 
 .bg-inverse .nav-item .nav-link .badge {
 	width: 16px;
@@ -181,13 +245,17 @@ h1 {
 	background-image: url(../img/notification.svg);
 }
 
-.sidebar .nav-item .nav-link span {
+.sidebar .nav-item .nav-link span, .navbar-collapse .nav-item .nav-link span {
 	display: inline-block;
 	width: 16px;
 	height: 16px;
 	margin-bottom: -2px;
     margin-right: 20px;
     background-repeat: no-repeat;
+}
+
+.navbar-collapse .nav-item .nav-link span {
+    margin-right: 8px;
 }
 
 .sidebar .clock{

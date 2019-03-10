@@ -12,7 +12,7 @@
 <body>
 	<header class="navbar fixed-top bg-inverse">
 		<div class="toggle-menu">
-			<button class="navbar-toggler navbar-toggler-right hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler navbar-toggler-right hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarsCollapse" aria-controls="navbarsCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 		</div>
@@ -58,21 +58,65 @@
       	<img src="img/logo.png">
       </div>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Settings</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Help</a>
-          </li>
-        </ul>
+      <div class="collapse navbar-collapse" id="navbarsCollapse">
+          <ul class="navbar-nav collapse-menu flex-row">
+          	<div class="toggle-menu">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsCollapse" aria-controls="navbarsCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+	        <li class="nav-item">
+	            <a class="nav-link" href="#"><span class="icon-briefcase"></span>Мой профиль</a>
+	            <ul class="navbar-nav sub-menu">
+	            	<li class="nav-item">
+	            		<a class="nav-link" href="#">Валюта</a>
+	            	</li>
+	            	<li class="nav-item">
+	            		<a class="nav-link" href="#">Активы</a>
+	            	</li>
+	            	<li class="nav-item">
+	            		<a class="nav-link" href="#">Площадки</a>
+	            	</li>
+	            </ul>
+	        </li>
+	        <li class="nav-item">
+	            <a class="nav-link" href="#"><span class="icon-chart"></span>Торговля</a>
+	            <ul class="navbar-nav sub-menu">
+	            	<li class="nav-item">
+	            		<a class="nav-link" href="#">Заявки</a>
+	            	</li>
+	            	<li class="nav-item">
+	            		<a class="nav-link" href="#">Сделки</a>
+	            	</li>
+	            	<li class="nav-item">
+	            		<a class="nav-link" href="#">Поручения</a>
+	            	</li>
+	            </ul>
+	        </li>
+	        <li class="nav-item">
+	            <a class="nav-link" href="#"><span class="icon-service"></span>Сервис</a>
+	            <ul class="navbar-nav sub-menu">
+	            	<li class="nav-item">
+	            		<a class="nav-link" href="#">Поручение на сделку</a>
+	            	</li>
+	            	<li class="nav-item">
+	            		<a class="nav-link" href="#">Поручение в свободной форме</a>
+	            	</li>
+	            	<li class="nav-item">
+	            		<a class="nav-link" href="#">Поручения на вывод денежных средств</a>
+	            	</li>
+	            </ul>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#"><span class="icon-contacs"></span>Контакты</a>
+	          <a class="nav-link" href="#"><span class="icon-exit"></span>Мой профиль</a>
+	        </li>
+	        <div class="toggle-menu ml-auto">
+				<button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarsCollapse" aria-controls="navbarsCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+	      </ul>
       </div>
     </header>
 	<div class="container-fluid">
