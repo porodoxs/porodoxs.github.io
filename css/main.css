@@ -73,6 +73,7 @@ h1 {
 }
 
 .navbar-collapse .sub-menu .nav-link{
+	display: inline;
 	line-height: 33px;
 	font-size: 16px;
 	color: rgba(255, 255, 255, 0.8);
