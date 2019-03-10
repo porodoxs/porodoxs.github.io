@@ -196,9 +196,10 @@ h1 {
 
 .sidebar .rate{
 	background: #0B2248;
-	line-height: 25px;
 	font-size: 12px;
 	color: rgba(255, 255, 255, 0.64);
+	padding: 10px 20px 20px;
+    margin-bottom: 40px;
 }
 
 .sidebar .clock .clock-date, .sidebar .clock .clock-time {
@@ -231,14 +232,29 @@ h1 {
 
 .sidebar .rate span:first-child {
 	display: block;
+	margin-bottom: 8px;
 }
 
 .sidebar .rate .dollar, .sidebar .rate .euro{
-	line-height: 33px;
 	font-size: 16px;
 	color: #0069BF;
 }
 
+.arrow-down, .arrow-up{
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	margin-left: 2px;
+}
+.arrow-down{
+	background-image: url(../img/arrow-down.svg);
+	margin-bottom: -4px;
+}
+
+.arrow-up{
+	background-image: url(../img/arrow-up.svg);
+	margin-bottom: 8px;
+}
 
 .icon-briefcase{
 	background-image: url(../img/briefcase.svg);
