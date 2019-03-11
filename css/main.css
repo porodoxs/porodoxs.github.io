@@ -82,6 +82,7 @@ h1 {
 
 .sidebar .nav-link.active {
 	background: #0B2248;
+	cursor: default;
 }
 
 .username {
@@ -177,6 +178,11 @@ h1 {
 
 #navbarsCollapse .float-right .navbar-toggler-icon{
 	background-image: url(../img/menu-options-close.svg);
+}
+
+#navbarsCollapse .nav-exit{
+	margin-top: 80px;
+    margin-bottom: 40px;
 }
 
 .logo {
@@ -343,6 +349,10 @@ h1 {
 
 .icon-exit{
 	background-image: url(../img/exit.svg);
+}
+
+.icon-profile{
+	background-image: url(../img/profile.svg);
 }
 
 .dropdown-menu, .dropdown-header{
