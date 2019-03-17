@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/jasny-bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/calendar.css">
 </head>
 <body>
 	<header class="navbar fixed-top bg-inverse">
@@ -166,166 +167,201 @@
         </div>
 
         <main class="content">
-          <h1>Dashboard</h1>
+        	<h1><span class="icon-fashion-briefcase"></span>Портфель</h1>
+
+	        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+			  <li class="nav-item">
+			    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-portfolio" role="tab" aria-controls="pills-portfolio" aria-selected="true">Мой портфель</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-currencies" role="tab" aria-controls="pills-currencies" aria-selected="false">Валюты</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-assets" role="tab" aria-controls="pills-assets" aria-selected="false">Активы</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-platform" role="tab" aria-controls="pills-platform" aria-selected="false">Площадка</a>
+			  </li>
+			</ul>
 
           <section class="row text-center placeholders">
+          	<div class="block-chart col-6 col-sm-6">
+          		<div class="form-inline">
+          			<span class="form-title">
+          				Динамика стоимости портфеля (руб.)
+          			</span>
+          			<div class="form-group ml-auto">
+				      <label for="inputState">Показать за</label>
+				      <select id="inputState" class="form-control custom-select">
+				        <option selected>Неделю</option>
+				      </select>
+				    </div>
+          		</div>
+          		<div class="chart">
+          			<canvas id="chart"></canvas>
+          		</div>
+          	</div>
             <div class="col-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <div class="text-muted">Something else</div>
-            </div>
-            <div class="col-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
+              <div class="calendar"></div>
             </div>
           </section>
 
           <h2>Section title</h2>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-                <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>Integer</td>
-                  <td>nec</td>
-                  <td>odio</td>
-                  <td>Praesent</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>libero</td>
-                  <td>Sed</td>
-                  <td>cursus</td>
-                  <td>ante</td>
-                </tr>
-                <tr>
-                  <td>1,004</td>
-                  <td>dapibus</td>
-                  <td>diam</td>
-                  <td>Sed</td>
-                  <td>nisi</td>
-                </tr>
-                <tr>
-                  <td>1,005</td>
-                  <td>Nulla</td>
-                  <td>quis</td>
-                  <td>sem</td>
-                  <td>at</td>
-                </tr>
-                <tr>
-                  <td>1,006</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
-                </tr>
-                <tr>
-                  <td>1,007</td>
-                  <td>sagittis</td>
-                  <td>ipsum</td>
-                  <td>Praesent</td>
-                  <td>mauris</td>
-                </tr>
-                <tr>
-                  <td>1,008</td>
-                  <td>Fusce</td>
-                  <td>nec</td>
-                  <td>tellus</td>
-                  <td>sed</td>
-                </tr>
-                <tr>
-                  <td>1,009</td>
-                  <td>augue</td>
-                  <td>semper</td>
-                  <td>porta</td>
-                  <td>Mauris</td>
-                </tr>
-                <tr>
-                  <td>1,010</td>
-                  <td>massa</td>
-                  <td>Vestibulum</td>
-                  <td>lacinia</td>
-                  <td>arcu</td>
-                </tr>
-                <tr>
-                  <td>1,011</td>
-                  <td>eget</td>
-                  <td>nulla</td>
-                  <td>Class</td>
-                  <td>aptent</td>
-                </tr>
-                <tr>
-                  <td>1,012</td>
-                  <td>taciti</td>
-                  <td>sociosqu</td>
-                  <td>ad</td>
-                  <td>litora</td>
-                </tr>
-                <tr>
-                  <td>1,013</td>
-                  <td>torquent</td>
-                  <td>per</td>
-                  <td>conubia</td>
-                  <td>nostra</td>
-                </tr>
-                <tr>
-                  <td>1,014</td>
-                  <td>per</td>
-                  <td>inceptos</td>
-                  <td>himenaeos</td>
-                  <td>Curabitur</td>
-                </tr>
-                <tr>
-                  <td>1,015</td>
-                  <td>sodales</td>
-                  <td>ligula</td>
-                  <td>in</td>
-                  <td>libero</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <div class="tab-content" id="nav-tabContent">
+	          <div class="table-responsive tab-pane fade show active" id="pills-portfolio" role="tabpanel" aria-labelledby="nav-portfolio-tab">
+	            <table class="table table-striped">
+	              <thead>
+	                <tr>
+	                  <th>#</th>
+	                  <th>Header</th>
+	                  <th>Header</th>
+	                  <th>Header</th>
+	                  <th>Header</th>
+	                </tr>
+	              </thead>
+	              <tbody>
+	                <tr>
+	                  <td>1,001</td>
+	                  <td>Lorem</td>
+	                  <td>ipsum</td>
+	                  <td>dolor</td>
+	                  <td>sit</td>
+	                </tr>
+	                <tr>
+	                  <td>1,002</td>
+	                  <td>amet</td>
+	                  <td>consectetur</td>
+	                  <td>adipiscing</td>
+	                  <td>elit</td>
+	                </tr>
+	                <tr>
+	                  <td>1,003</td>
+	                  <td>Integer</td>
+	                  <td>nec</td>
+	                  <td>odio</td>
+	                  <td>Praesent</td>
+	                </tr>
+	              </tbody>
+	            </table>
+	          </div>
+	          <div class="table-responsive tab-pane fade" id="pills-currencies" role="tabpanel" aria-labelledby="nav-currencies-tab">
+	          	<table class="table table-striped">
+	              <thead>
+	                <tr>
+	                  <th>#</th>
+	                  <th>Header</th>
+	                  <th>Header</th>
+	                  <th>Header</th>
+	                  <th>Header</th>
+	                </tr>
+	              </thead>
+	              <tbody>
+	                <tr>
+	                  <td>2,002</td>
+	                  <td>LOOOOL</td>
+	                  <td>ipsum</td>
+	                  <td>dolor</td>
+	                  <td>sit</td>
+	                </tr>
+	                <tr>
+	                  <td>1,002</td>
+	                  <td>amet</td>
+	                  <td>consectetur</td>
+	                  <td>adipiscing</td>
+	                  <td>elit</td>
+	                </tr>
+	                <tr>
+	                  <td>1,003</td>
+	                  <td>Integer</td>
+	                  <td>nec</td>
+	                  <td>odio</td>
+	                  <td>Praesent</td>
+	                </tr>
+	              </tbody>
+	            </table>
+	          </div>
+			  <div class="table-responsive tab-pane fade" id="pills-assets" role="tabpanel" aria-labelledby="nav-assets-tab">
+			  	<table class="table table-striped">
+	              <thead>
+	                <tr>
+	                  <th>#</th>
+	                  <th>Header</th>
+	                  <th>Header</th>
+	                  <th>Header</th>
+	                  <th>Header</th>
+	                </tr>
+	              </thead>
+	              <tbody>
+	                <tr>
+	                  <td>1,001</td>
+	                  <td>Lorem</td>
+	                  <td>ipsum</td>
+	                  <td>dolor</td>
+	                  <td>sit</td>
+	                </tr>
+	                <tr>
+	                  <td>1,002</td>
+	                  <td>amet</td>
+	                  <td>consectetur</td>
+	                  <td>adipiscing</td>
+	                  <td>elit</td>
+	                </tr>
+	                <tr>
+	                  <td>1,003</td>
+	                  <td>Integer</td>
+	                  <td>nec</td>
+	                  <td>odio</td>
+	                  <td>Praesent</td>
+	                </tr>
+	              </tbody>
+	            </table>
+			  </div>
+			  <div class="table-responsive tab-pane fade" id="pills-platform" role="tabpanel" aria-labelledby="nav-platform-tab">
+			  	<table class="table table-striped">
+	              <thead>
+	                <tr>
+	                  <th>#</th>
+	                  <th>Header</th>
+	                  <th>Header</th>
+	                  <th>Header</th>
+	                  <th>Header</th>
+	                </tr>
+	              </thead>
+	              <tbody>
+	                <tr>
+	                  <td>1,001</td>
+	                  <td>Lorem</td>
+	                  <td>ipsum</td>
+	                  <td>dolor</td>
+	                  <td>sit</td>
+	                </tr>
+	                <tr>
+	                  <td>1,002</td>
+	                  <td>amet</td>
+	                  <td>consectetur</td>
+	                  <td>adipiscing</td>
+	                  <td>elit</td>
+	                </tr>
+	                <tr>
+	                  <td>1,003</td>
+	                  <td>Integer</td>
+	                  <td>nec</td>
+	                  <td>odio</td>
+	                  <td>Praesent</td>
+	                </tr>
+	              </tbody>
+	            </table>
+			  </div>
+			 </div>
         </main>
       </div>
     </div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jasny-bootstrap.min.js"></script>
+	<script src="js/moment.js"></script>
+	<script src="js/Chart.min.js"></script>
+	<script src="js/calendar.js"></script>
 
 	<script>
 		var now, dd, td;
@@ -361,6 +397,102 @@
 		 var timehtml = clockhour + ":" + clockminutes;
 		 return {"datehtml":datehtml,"timehtml":timehtml};
 		}
+
+		var data1 = [100000, 120000, 110000, 130000, 150000, 180000, 190000, 200000, 210000, 220000, 210000, 230000, 250000, 280000, 290000, 350000];
+		var data2 = [100000, 110000, 105000, 120000, 130000, 150000, 180000, 190000, 205000, 210000, 205000, 220000, 230000, 250000, 280000, 290000];
+		var data = data1.concat(data2);
+		var dataMax = Math.max.apply(null, data);
+		var dataMin = Math.min.apply(null, data);
+		var label = [];
+		data1.forEach(function(item, i, arr) {
+		  label[i]= i;
+		});
+		var dataset = {
+				labels: label,
+				datasets: [{
+					borderColor: '#357816',
+					yAxisID: 'yAxisLeft',
+					data: data1,
+					fill: false,
+					pointRadius: 0,
+				}, {
+					borderColor: '#AE3423',
+					yAxisID: 'yAxisRight',
+					data: data2,
+					fill: false,
+					pointRadius: 0,
+				}]
+			};
+
+		new Chart('chart', {
+		    type: 'line',
+		    data: dataset,
+		    options: {
+		    	responsive: true,
+		    	maintainAspectRatio: false,
+		    	legend: {
+			      display: false
+			    },
+			    scales: {
+			      xAxes: [{
+			      	display: false,
+			        gridLines: {
+			          display: false
+			        }
+			      }],
+			      yAxes: [{
+			        id: "yAxisLeft",
+			        type: 'linear',
+			        position: "left",
+			        ticks: {
+			          max: dataMax,
+			          min: dataMin,
+
+			          maxTicksCount: 7,
+
+			          	fontFamily: "'Open Sans', sans-serif",
+				        fontSize: 12,
+				        fontStyle: "normal",
+				        fontColor: "#000000",
+			          callback: function(value, index, values) {
+                        return '$' + value.toLocaleString();
+                      }
+			        },
+			      },
+			      {
+			        id: "yAxisRight",
+			        type: 'linear',
+			        position: "right",
+			        ticks: {
+			          max: dataMax,
+			          min: dataMin,
+	
+			          maxTicksCount: 7,
+
+			          	fontFamily: "'Open Sans', sans-serif",
+				        fontSize: 12,
+				        fontStyle: "normal",
+				        fontColor: "#000000",
+			          callback: function(value, index, values) {
+                        return '€' + value.toLocaleString();
+                      }
+			        },
+			      }
+			    ]},
+			    tooltips: {
+			      mode: false,
+			      callbacks: {
+			        title: function() {},
+			        label: function() {}
+			      }
+			    },
+		        elements: {
+		            line: {
+		                tension: 0
+		            }
+		        },
+		    }
+		});
 	</script>
 </body>
 </html>
