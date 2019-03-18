@@ -151,10 +151,6 @@
 .calendar .clndr .clndr-controls .clndr-control-button .clndr-next-button {
   right:35px;
 }
-.calendar .clndr .clndr-controls {
-  padding: 1.5em 0 0 0;
-  min-height: 85px;
-}
 .calendar .clndr .clndr-controls .clndr-control-button .clndr-previous-button {
   top: 24px;
 }

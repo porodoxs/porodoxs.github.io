@@ -184,8 +184,8 @@
 			  </li>
 			</ul>
 
-          <section class="row text-center placeholders">
-          	<div class="block-chart col-6 col-sm-6">
+          <section class="row text-center">
+          	<div class="block-chart col-auto col-sm-auto pb-4">
           		<div class="form-inline">
           			<span class="form-title">
           				Динамика стоимости портфеля (руб.)
@@ -201,45 +201,66 @@
           			<canvas id="chart"></canvas>
           		</div>
           	</div>
-            <div class="col-6 col-sm-3 placeholder">
+            <div class="col-auto col-sm-auto pb-4">
               <div class="calendar"></div>
             </div>
           </section>
 
-          <h2>Section title</h2>
           <div class="tab-content" id="nav-tabContent">
 	          <div class="table-responsive tab-pane fade show active" id="pills-portfolio" role="tabpanel" aria-labelledby="nav-portfolio-tab">
 	            <table class="table table-striped">
 	              <thead>
 	                <tr>
-	                  <th>#</th>
-	                  <th>Header</th>
-	                  <th>Header</th>
-	                  <th>Header</th>
-	                  <th>Header</th>
+	                  <th>Счёт</th>
+	                  <th>Инструмент</th>
+	                  <th>Тикер</th>
+	                  <th>Колл.</th>
+	                  <th>Цена покупки</th>
+	                  <th>Текущая цена</th>
+	                  <th>Нереализованная прибыль</th>
+	                  <th>Стоимость позиции</th>
 	                </tr>
 	              </thead>
 	              <tbody>
 	                <tr>
-	                  <td>1,001</td>
-	                  <td>Lorem</td>
-	                  <td>ipsum</td>
-	                  <td>dolor</td>
-	                  <td>sit</td>
+	                  <td>БО-Ф3765 (MOEX: сро...</td>
+	                  <td>SI-3.19</td>
+	                  <td>SIH9</td>
+	                  <td>534</td>
+	                  <td>65300</td>
+	                  <td>65432</td>
+	                  <td>70488</td>
+	                  <td>34940688</td>
 	                </tr>
 	                <tr>
-	                  <td>1,002</td>
-	                  <td>amet</td>
-	                  <td>consectetur</td>
-	                  <td>adipiscing</td>
-	                  <td>elit</td>
+	                  <td>БО-Ф3765 (MOEX: сро...</td>
+	                  <td>RTS-3.19</td>
+	                  <td>RIH9</td>
+	                  <td>125</td>
+	                  <td>119530</td>
+	                  <td>119630</td>
+	                  <td>12500</td>
+	                  <td>14953750</td>
 	                </tr>
 	                <tr>
-	                  <td>1,003</td>
-	                  <td>Integer</td>
-	                  <td>nec</td>
-	                  <td>odio</td>
-	                  <td>Praesent</td>
+	                  <td>БО-Ф3765 (MOEX: сро...</td>
+	                  <td>Si-3.19M210319P</td>
+	                  <td>Si67000BO9</td>
+	                  <td>620</td>
+	                  <td>1677</td>
+	                  <td>1700</td>
+	                  <td>14260</td>
+	                  <td>1054000</td>
+	                </tr>
+	                <tr>
+	                  <td>БО-Ф3765 (MOEX: сро...</td>
+	                  <td>USDRUB</td>
+	                  <td>USD000000TOD</td>
+	                  <td>1000</td>
+	                  <td>67.2301</td>
+	                  <td>65.4075</td>
+	                  <td>-1822.6</td>
+	                  <td>65407.5</td>
 	                </tr>
 	              </tbody>
 	            </table>
@@ -248,34 +269,59 @@
 	          	<table class="table table-striped">
 	              <thead>
 	                <tr>
-	                  <th>#</th>
-	                  <th>Header</th>
-	                  <th>Header</th>
-	                  <th>Header</th>
-	                  <th>Header</th>
+	                  <th>Счёт</th>
+	                  <th>Инструмент</th>
+	                  <th>Тикер</th>
+	                  <th>Колл.</th>
+	                  <th>Цена покупки</th>
+	                  <th>Текущая цена</th>
+	                  <th>Нереализованная прибыль</th>
+	                  <th>Стоимость позиции</th>
 	                </tr>
 	              </thead>
 	              <tbody>
+	              	<tr>
+	              		<td colspan="8">Активы в рублях</td>
+	              	</tr>
 	                <tr>
-	                  <td>2,002</td>
-	                  <td>LOOOOL</td>
-	                  <td>ipsum</td>
-	                  <td>dolor</td>
-	                  <td>sit</td>
+	                  <td>БО-Ф3765 (MOEX: сро...</td>
+	                  <td>SI-3.19</td>
+	                  <td>SIH9</td>
+	                  <td>534</td>
+	                  <td>65300</td>
+	                  <td>65432</td>
+	                  <td>70488</td>
+	                  <td>34940688</td>
 	                </tr>
 	                <tr>
-	                  <td>1,002</td>
-	                  <td>amet</td>
-	                  <td>consectetur</td>
-	                  <td>adipiscing</td>
-	                  <td>elit</td>
+	                  <td>БО-Ф3765 (MOEX: сро...</td>
+	                  <td>RTS-3.19</td>
+	                  <td>RIH9</td>
+	                  <td>125</td>
+	                  <td>119530</td>
+	                  <td>119630</td>
+	                  <td>12500</td>
+	                  <td>14953750</td>
 	                </tr>
 	                <tr>
-	                  <td>1,003</td>
-	                  <td>Integer</td>
-	                  <td>nec</td>
-	                  <td>odio</td>
-	                  <td>Praesent</td>
+	                  <td>БО-Ф3765 (MOEX: сро...</td>
+	                  <td>Si-3.19M210319P</td>
+	                  <td>Si67000BO9</td>
+	                  <td>620</td>
+	                  <td>1677</td>
+	                  <td>1700</td>
+	                  <td>14260</td>
+	                  <td>1054000</td>
+	                </tr>
+	                <tr>
+	                  <td>БО-Ф3765 (MOEX: сро...</td>
+	                  <td>USDRUB</td>
+	                  <td>USD000000TOD</td>
+	                  <td>1000</td>
+	                  <td>67.2301</td>
+	                  <td>65.4075</td>
+	                  <td>-1822.6</td>
+	                  <td>65407.5</td>
 	                </tr>
 	              </tbody>
 	            </table>
@@ -284,34 +330,56 @@
 			  	<table class="table table-striped">
 	              <thead>
 	                <tr>
-	                  <th>#</th>
-	                  <th>Header</th>
-	                  <th>Header</th>
-	                  <th>Header</th>
-	                  <th>Header</th>
+	                  <th>Счёт</th>
+	                  <th>Инструмент</th>
+	                  <th>Тикер</th>
+	                  <th>Колл.</th>
+	                  <th>Цена покупки</th>
+	                  <th>Текущая цена</th>
+	                  <th>Нереализованная прибыль</th>
+	                  <th>Стоимость позиции</th>
 	                </tr>
 	              </thead>
 	              <tbody>
 	                <tr>
-	                  <td>1,001</td>
-	                  <td>Lorem</td>
-	                  <td>ipsum</td>
-	                  <td>dolor</td>
-	                  <td>sit</td>
+	                  <td>БО-Ф3765 (MOEX: сро...</td>
+	                  <td>SI-3.19</td>
+	                  <td>SIH9</td>
+	                  <td>534</td>
+	                  <td>65300</td>
+	                  <td>65432</td>
+	                  <td>70488</td>
+	                  <td>34940688</td>
 	                </tr>
 	                <tr>
-	                  <td>1,002</td>
-	                  <td>amet</td>
-	                  <td>consectetur</td>
-	                  <td>adipiscing</td>
-	                  <td>elit</td>
+	                  <td>БО-Ф3765 (MOEX: сро...</td>
+	                  <td>RTS-3.19</td>
+	                  <td>RIH9</td>
+	                  <td>125</td>
+	                  <td>119530</td>
+	                  <td>119630</td>
+	                  <td>12500</td>
+	                  <td>14953750</td>
 	                </tr>
 	                <tr>
-	                  <td>1,003</td>
-	                  <td>Integer</td>
-	                  <td>nec</td>
-	                  <td>odio</td>
-	                  <td>Praesent</td>
+	                  <td>БО-Ф3765 (MOEX: сро...</td>
+	                  <td>Si-3.19M210319P</td>
+	                  <td>Si67000BO9</td>
+	                  <td>620</td>
+	                  <td>1677</td>
+	                  <td>1700</td>
+	                  <td>14260</td>
+	                  <td>1054000</td>
+	                </tr>
+	                <tr>
+	                  <td>БО-Ф3765 (MOEX: сро...</td>
+	                  <td>USDRUB</td>
+	                  <td>USD000000TOD</td>
+	                  <td>1000</td>
+	                  <td>67.2301</td>
+	                  <td>65.4075</td>
+	                  <td>-1822.6</td>
+	                  <td>65407.5</td>
 	                </tr>
 	              </tbody>
 	            </table>
@@ -320,34 +388,56 @@
 			  	<table class="table table-striped">
 	              <thead>
 	                <tr>
-	                  <th>#</th>
-	                  <th>Header</th>
-	                  <th>Header</th>
-	                  <th>Header</th>
-	                  <th>Header</th>
+	                  <th>Счёт</th>
+	                  <th>Инструмент</th>
+	                  <th>Тикер</th>
+	                  <th>Колл.</th>
+	                  <th>Цена покупки</th>
+	                  <th>Текущая цена</th>
+	                  <th>Нереализованная прибыль</th>
+	                  <th>Стоимость позиции</th>
 	                </tr>
 	              </thead>
 	              <tbody>
 	                <tr>
-	                  <td>1,001</td>
-	                  <td>Lorem</td>
-	                  <td>ipsum</td>
-	                  <td>dolor</td>
-	                  <td>sit</td>
+	                  <td>БО-Ф3765 (MOEX: сро...</td>
+	                  <td>SI-3.19</td>
+	                  <td>SIH9</td>
+	                  <td>534</td>
+	                  <td>65300</td>
+	                  <td>65432</td>
+	                  <td>70488</td>
+	                  <td>34940688</td>
 	                </tr>
 	                <tr>
-	                  <td>1,002</td>
-	                  <td>amet</td>
-	                  <td>consectetur</td>
-	                  <td>adipiscing</td>
-	                  <td>elit</td>
+	                  <td>БО-Ф3765 (MOEX: сро...</td>
+	                  <td>RTS-3.19</td>
+	                  <td>RIH9</td>
+	                  <td>125</td>
+	                  <td>119530</td>
+	                  <td>119630</td>
+	                  <td>12500</td>
+	                  <td>14953750</td>
 	                </tr>
 	                <tr>
-	                  <td>1,003</td>
-	                  <td>Integer</td>
-	                  <td>nec</td>
-	                  <td>odio</td>
-	                  <td>Praesent</td>
+	                  <td>БО-Ф3765 (MOEX: сро...</td>
+	                  <td>Si-3.19M210319P</td>
+	                  <td>Si67000BO9</td>
+	                  <td>620</td>
+	                  <td>1677</td>
+	                  <td>1700</td>
+	                  <td>14260</td>
+	                  <td>1054000</td>
+	                </tr>
+	                <tr>
+	                  <td>БО-Ф3765 (MOEX: сро...</td>
+	                  <td>USDRUB</td>
+	                  <td>USD000000TOD</td>
+	                  <td>1000</td>
+	                  <td>67.2301</td>
+	                  <td>65.4075</td>
+	                  <td>-1822.6</td>
+	                  <td>65407.5</td>
 	                </tr>
 	              </tbody>
 	            </table>

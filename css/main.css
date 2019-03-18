@@ -5,12 +5,12 @@ body {
 	font-size: 14px;
 	color: #001435;
 	padding-top: 80px;
+	background-color: #F7F7F7;
 }
 main {
 	width: 100%;
 	padding: 20px;
 	margin-left: 237px;
-	background-color: #F7F7F7;
 }
 
 a, a:hover {
@@ -419,12 +419,13 @@ h1 span {
 }
 
 .block-chart{
-  	height: 295px;
+	width: calc(100% - 365px);
+    max-width: 805px;
 }
 
 .chart{
-	height: 250px;
-	padding: 18px 20px;
+	height: 266px;
+	padding: 16px 18px 20px;
 	background: #FFFFFF;
 	border-radius: 0px 0px 4px 4px;
 }
@@ -456,6 +457,23 @@ h1 span {
 
 .calendar{
 	width: 335px;
+}
+
+.table-striped thead {
+	background: #001435;
+    color: #FFFFFF;
+}
+
+.table-striped thead tr th{
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: normal;
+}
+
+@media (max-width: 1024px){
+	.block-chart{
+		width: 100%;
+	}
 }
 
 @media (max-width: 576px){
